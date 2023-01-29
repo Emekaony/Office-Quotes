@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		4E35A71329844AC200514497 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E35A71229844AC200514497 /* AppDelegate.swift */; };
 		4E35A71529844AC200514497 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E35A71429844AC200514497 /* SceneDelegate.swift */; };
-		4E35A71729844AC200514497 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E35A71629844AC200514497 /* ViewController.swift */; };
+		4E35A71729844AC200514497 /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E35A71629844AC200514497 /* QuoteViewController.swift */; };
 		4E35A71A29844AC200514497 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E35A71829844AC200514497 /* Main.storyboard */; };
 		4E35A71C29844AC400514497 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E35A71B29844AC400514497 /* Assets.xcassets */; };
 		4E35A71F29844AC400514497 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E35A71D29844AC400514497 /* LaunchScreen.storyboard */; };
+		4E35A7272985AE9300514497 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E35A7262985AE9300514497 /* Quote.swift */; };
+		4E35A7292985B47B00514497 /* QuoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E35A7282985B47B00514497 /* QuoteController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4E35A70F29844AC200514497 /* Office Quotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Office Quotes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E35A71229844AC200514497 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E35A71429844AC200514497 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4E35A71629844AC200514497 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4E35A71629844AC200514497 /* QuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
 		4E35A71929844AC200514497 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4E35A71B29844AC400514497 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E35A71E29844AC400514497 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E35A72029844AC400514497 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E35A7262985AE9300514497 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		4E35A7282985B47B00514497 /* QuoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +62,13 @@
 			children = (
 				4E35A71229844AC200514497 /* AppDelegate.swift */,
 				4E35A71429844AC200514497 /* SceneDelegate.swift */,
-				4E35A71629844AC200514497 /* ViewController.swift */,
+				4E35A71629844AC200514497 /* QuoteViewController.swift */,
 				4E35A71829844AC200514497 /* Main.storyboard */,
 				4E35A71B29844AC400514497 /* Assets.xcassets */,
 				4E35A71D29844AC400514497 /* LaunchScreen.storyboard */,
 				4E35A72029844AC400514497 /* Info.plist */,
+				4E35A7262985AE9300514497 /* Quote.swift */,
+				4E35A7282985B47B00514497 /* QuoteController.swift */,
 			);
 			path = "Office Quotes";
 			sourceTree = "<group>";
@@ -138,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E35A71729844AC200514497 /* ViewController.swift in Sources */,
+				4E35A7292985B47B00514497 /* QuoteController.swift in Sources */,
+				4E35A7272985AE9300514497 /* Quote.swift in Sources */,
+				4E35A71729844AC200514497 /* QuoteViewController.swift in Sources */,
 				4E35A71329844AC200514497 /* AppDelegate.swift in Sources */,
 				4E35A71529844AC200514497 /* SceneDelegate.swift in Sources */,
 			);

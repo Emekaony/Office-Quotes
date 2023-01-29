@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Quote View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Office_Quotes" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="QuoteViewController" customModule="Office_Quotes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -45,6 +45,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Get Random Quote">
                                     <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="getRandomQuote:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cOM-l7-kBI"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Michael Scott" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGc-Y6-L4r">
                                 <rect key="frame" x="20" y="259.66666666666669" width="353" height="23.333333333333314"/>
@@ -75,10 +78,16 @@
                             <constraint firstItem="v8O-Qb-PSj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zQr-VD-PE7"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="characterImageView" destination="0bg-SL-OG3" id="jOn-in-oI2"/>
+                        <outlet property="characterLabel" destination="aGc-Y6-L4r" id="hCF-bc-dEw"/>
+                        <outlet property="getQuoteButton" destination="X6T-q8-kiY" id="cWR-Tv-Etg"/>
+                        <outlet property="quoteLabel" destination="MUw-Qv-ee9" id="S8R-AP-pNX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+            <point key="canvasLocation" x="-196" y="-51"/>
         </scene>
     </scenes>
     <resources>
