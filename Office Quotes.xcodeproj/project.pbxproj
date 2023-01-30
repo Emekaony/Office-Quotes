@@ -60,17 +60,41 @@
 		4E35A71129844AC200514497 /* Office Quotes */ = {
 			isa = PBXGroup;
 			children = (
-				4E35A71229844AC200514497 /* AppDelegate.swift */,
-				4E35A71429844AC200514497 /* SceneDelegate.swift */,
-				4E35A71629844AC200514497 /* QuoteViewController.swift */,
-				4E35A71829844AC200514497 /* Main.storyboard */,
+				4ED4B1FB29878C4C00B29517 /* Controllers */,
+				4ED4B1FA29878C3800B29517 /* Views */,
+				4ED4B1F929878C3000B29517 /* Models */,
 				4E35A71B29844AC400514497 /* Assets.xcassets */,
-				4E35A71D29844AC400514497 /* LaunchScreen.storyboard */,
 				4E35A72029844AC400514497 /* Info.plist */,
-				4E35A7262985AE9300514497 /* Quote.swift */,
-				4E35A7282985B47B00514497 /* QuoteController.swift */,
 			);
 			path = "Office Quotes";
+			sourceTree = "<group>";
+		};
+		4ED4B1F929878C3000B29517 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4E35A7262985AE9300514497 /* Quote.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4ED4B1FA29878C3800B29517 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4E35A71829844AC200514497 /* Main.storyboard */,
+				4E35A71D29844AC400514497 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4ED4B1FB29878C4C00B29517 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4E35A71629844AC200514497 /* QuoteViewController.swift */,
+				4E35A71229844AC200514497 /* AppDelegate.swift */,
+				4E35A71429844AC200514497 /* SceneDelegate.swift */,
+				4E35A7282985B47B00514497 /* QuoteController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
