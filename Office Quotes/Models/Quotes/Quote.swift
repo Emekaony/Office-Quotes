@@ -15,7 +15,7 @@ struct Quote: Codable {
     enum QuoteKeys: String, CodingKey {
         case data
         
-        enum DayaKeys: String, CodingKey {
+        enum DataKeys: String, CodingKey {
             case quote = "content"
             case character
             
@@ -28,9 +28,9 @@ struct Quote: Codable {
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: QuoteKeys.self)
-        let dataContainer = try container.nestedContainer(keyedBy: QuoteKeys.DayaKeys.self, forKey: .data)
+        let dataContainer = try container.nestedContainer(keyedBy: QuoteKeys.DataKeys.self, forKey: .data)
         quote = try dataContainer.decode(String.self, forKey: .quote)
-        let charContainer = try dataContainer.nestedContainer(keyedBy: QuoteKeys.DayaKeys.NameKeys.self, forKey: .character)
+        let charContainer = try dataContainer.nestedContainer(keyedBy: QuoteKeys.DataKeys.NameKeys.self, forKey: .character)
         
         firstName = try charContainer.decode(String.self, forKey: .firstName)
         lastName = try charContainer.decode(String.self, forKey: .lastName)

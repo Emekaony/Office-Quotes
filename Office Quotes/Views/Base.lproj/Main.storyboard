@@ -93,7 +93,7 @@
         <!--Episode-->
         <scene sceneID="bcM-HV-HZJ">
             <objects>
-                <viewController id="o5V-fk-UfD" sceneMemberID="viewController">
+                <viewController id="o5V-fk-UfD" customClass="EpisodeViewController" customModule="Office_Quotes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SiM-UR-JGB">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -125,6 +125,9 @@
                                 <rect key="frame" x="104.66666666666669" y="678" width="184" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Get Random Episode"/>
+                                <connections>
+                                    <action selector="getRandomQuote:" destination="o5V-fk-UfD" eventType="touchUpInside" id="qOd-s3-JP8"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date aired: 10/03/06" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4De-jq-B60">
                                 <rect key="frame" x="184.33333333333337" y="306.33333333333331" width="200.66666666666663" height="23.333333333333314"/>
@@ -154,6 +157,12 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Episode" image="film" catalog="system" id="Quw-Kj-SgH"/>
+                    <connections>
+                        <outlet property="dateLabel" destination="4De-jq-B60" id="uhl-6H-cgC"/>
+                        <outlet property="descriptionLabel" destination="cSd-gQ-U0m" id="emh-1W-v02"/>
+                        <outlet property="getQuoteButton" destination="Pca-uc-HVw" id="TKw-eG-MVi"/>
+                        <outlet property="titleLabel" destination="4LJ-hK-khZ" id="dMu-Bk-U2J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NC1-oS-UqN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

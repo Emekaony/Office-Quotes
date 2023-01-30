@@ -15,6 +15,9 @@
 		4E35A71F29844AC400514497 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E35A71D29844AC400514497 /* LaunchScreen.storyboard */; };
 		4E35A7272985AE9300514497 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E35A7262985AE9300514497 /* Quote.swift */; };
 		4E35A7292985B47B00514497 /* QuoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E35A7282985B47B00514497 /* QuoteController.swift */; };
+		4ED4B1FD29878EDE00B29517 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED4B1FC29878EDE00B29517 /* Episode.swift */; };
+		4ED4B1FF2987962E00B29517 /* EpisodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED4B1FE2987962E00B29517 /* EpisodeController.swift */; };
+		4ED4B201298796DF00B29517 /* EpisodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED4B200298796DF00B29517 /* EpisodeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		4E35A72029844AC400514497 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E35A7262985AE9300514497 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		4E35A7282985B47B00514497 /* QuoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteController.swift; sourceTree = "<group>"; };
+		4ED4B1FC29878EDE00B29517 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		4ED4B1FE2987962E00B29517 /* EpisodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeController.swift; sourceTree = "<group>"; };
+		4ED4B200298796DF00B29517 /* EpisodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +78,8 @@
 		4ED4B1F929878C3000B29517 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				4E35A7262985AE9300514497 /* Quote.swift */,
+				4ED4B20529879EFD00B29517 /* Quotes */,
+				4ED4B20429879EF600B29517 /* Episodes */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -89,12 +96,46 @@
 		4ED4B1FB29878C4C00B29517 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				4E35A71629844AC200514497 /* QuoteViewController.swift */,
+				4ED4B20329879EDF00B29517 /* Quotes */,
+				4ED4B20229879ECE00B29517 /* Episodes */,
 				4E35A71229844AC200514497 /* AppDelegate.swift */,
 				4E35A71429844AC200514497 /* SceneDelegate.swift */,
-				4E35A7282985B47B00514497 /* QuoteController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4ED4B20229879ECE00B29517 /* Episodes */ = {
+			isa = PBXGroup;
+			children = (
+				4ED4B200298796DF00B29517 /* EpisodeViewController.swift */,
+				4ED4B1FE2987962E00B29517 /* EpisodeController.swift */,
+			);
+			path = Episodes;
+			sourceTree = "<group>";
+		};
+		4ED4B20329879EDF00B29517 /* Quotes */ = {
+			isa = PBXGroup;
+			children = (
+				4E35A7282985B47B00514497 /* QuoteController.swift */,
+				4E35A71629844AC200514497 /* QuoteViewController.swift */,
+			);
+			path = Quotes;
+			sourceTree = "<group>";
+		};
+		4ED4B20429879EF600B29517 /* Episodes */ = {
+			isa = PBXGroup;
+			children = (
+				4ED4B1FC29878EDE00B29517 /* Episode.swift */,
+			);
+			path = Episodes;
+			sourceTree = "<group>";
+		};
+		4ED4B20529879EFD00B29517 /* Quotes */ = {
+			isa = PBXGroup;
+			children = (
+				4E35A7262985AE9300514497 /* Quote.swift */,
+			);
+			path = Quotes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,10 +210,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E35A7292985B47B00514497 /* QuoteController.swift in Sources */,
+				4ED4B1FD29878EDE00B29517 /* Episode.swift in Sources */,
 				4E35A7272985AE9300514497 /* Quote.swift in Sources */,
 				4E35A71729844AC200514497 /* QuoteViewController.swift in Sources */,
 				4E35A71329844AC200514497 /* AppDelegate.swift in Sources */,
 				4E35A71529844AC200514497 /* SceneDelegate.swift in Sources */,
+				4ED4B201298796DF00B29517 /* EpisodeViewController.swift in Sources */,
+				4ED4B1FF2987962E00B29517 /* EpisodeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
